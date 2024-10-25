@@ -1,0 +1,91 @@
+.custom-bg {  
+    background: linear-gradient(to right, #d3d3d3, #90ee90); 
+}  
+.custom-text {  
+    color: #ffffff;  
+}  
+
+.separator {  
+    width: 1px; 
+    background-color: #000;  
+    height: 30px; 
+    display: inline-block; 
+    margin: 0 15px;  
+}  
+
+.formulario {  
+    border: 1px solid #7fb1e770; /* Color del borde */  
+    border-radius: 5px; /* Bordes redondeados */  
+    background-color: #d0dfee54; /* Color de fondo oscuro */  
+    padding: 20px; /* Espaciado interno */  
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.185); /* Sombra para realzar */  
+}  
+
+.img {
+    height: 280px;
+    width: 280px;
+}
+
+.footer{
+    width: 100%;
+    
+}
+
+.diamond-container {  
+    position: relative;  
+    width: 200px; 
+    height: 200px; 
+    margin: 20px;  
+}  
+.diamond {  
+    position: absolute;  
+    width: 200px; /* Tamaño de la imagen de fondo (diamante) */  
+    height: 200px;  
+    overflow: hidden;  
+    transform: rotate(45deg); /* Rotar 45 grados para formar un rombo */  
+    z-index: 1; /* Para quedar detrás de la imagen frontal */  
+}  
+.diamond img {  
+    width: 100%;  /* Escalar la imagen para que ocupe el contenedor */  
+    height: auto; /* Mantener la proporción de la imagen */  
+}  
+.square {  
+    position: absolute;  
+    top: 50%;  
+    left: 50%;  
+    width: 190px; /* Tamaño de la imagen frontal (cuadrada) */  
+    height: 160px;   
+    transform: translate(-60%, -70%); /* Centrar la imagen frontal */  
+    z-index: 2; /* Para que quede delante de la imagen de fondo */  
+}  
+.square img {  
+    width: 100%;  
+    height: auto; /* Mantener la proporción de la imagen */  
+} 
+
+.carousel {  
+    max-width: 970px; /* Limitar el ancho del carrusel */  
+    margin: auto; /* Centrar el carrusel */  
+    border-radius: 10px; /* Bordes redondeados */  
+    overflow: hidden; /* Evitar el desbordamiento */  
+}  
+
+.carousel-item img {  
+    transition: transform 0.5s ease; /* Efecto de transición al cambiar de imagen */  
+}  
+
+.carousel-item:hover img {  
+    transform: scale(1.05); /* Escalar imagen al pasar el mouse */  
+}  
+
+/* Estilo de los controles */  
+.carousel-control-prev-icon,  
+.carousel-control-next-icon {  
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */  
+    border-radius: 50%; /* Bordes redondeados */  
+}  
+
+.carousel-control-prev,  
+.carousel-control-next {  
+    filter: brightness(0) invert(1); /* Ajustar el color de los iconos */  
+}  
